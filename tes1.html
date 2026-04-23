@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "primary-container": "#131b2e",
+                    "on-tertiary-container": "#75859d",
+                    "error-container": "#ffdad6",
+                    "tertiary-container": "#0b1c30",
+                    "error": "#ba1a1a",
+                    "on-surface": "#191c1e",
+                    "surface-container": "#eceef0",
+                    "on-primary-fixed": "#131b2e",
+                    "background": "#f7f9fb",
+                    "on-primary-container": "#7c839b",
+                    "on-primary": "#ffffff",
+                    "on-surface-variant": "#45464d",
+                    "surface-bright": "#f7f9fb",
+                    "primary": "#000000",
+                    "secondary-fixed-dim": "#4edea3",
+                    "on-tertiary-fixed-variant": "#38485d",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-container-highest": "#e0e3e5",
+                    "surface": "#f7f9fb",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#565e74",
+                    "secondary-container": "#6cf8bb",
+                    "outline": "#76777d",
+                    "surface-dim": "#d8dadc",
+                    "tertiary-fixed": "#d3e4fe",
+                    "on-secondary-container": "#00714d",
+                    "surface-variant": "#e0e3e5",
+                    "secondary-fixed": "#6ffbbe",
+                    "secondary": "#006c49",
+                    "surface-container-high": "#e6e8ea",
+                    "on-background": "#191c1e",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-secondary-fixed": "#002113",
+                    "on-tertiary-fixed": "#0b1c30",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "tertiary": "#000000",
+                    "on-secondary-fixed-variant": "#005236",
+                    "outline-variant": "#c6c6cd",
+                    "primary-fixed-dim": "#bec6e0",
+                    "tertiary-fixed-dim": "#b7c8e1",
+                    "inverse-primary": "#bec6e0",
+                    "primary-fixed": "#dae2fd",
+                    "inverse-surface": "#2d3133"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-md": "16px",
+                    "stack-lg": "32px",
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "section-padding": "120px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Manrope"],
+                    "label-bold": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "display-xl": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-bold": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-xl": ["60px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(19, 27, 46, 0.1) 0%, rgba(19, 27, 46, 0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background font-body-md text-on-background">
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="max-w-[1280px] mx-auto flex justify-between items-center py-4 px-8">
+<div class="text-xl font-black text-slate-900 dark:text-white font-manrope antialiased tracking-tight">FadhelCORP</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-emerald-600 dark:text-emerald-400 font-bold border-b-2 border-emerald-500 pb-1 font-manrope antialiased tracking-tight transition-colors duration-200" href="tes1.html">Beranda</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-manrope antialiased tracking-tight hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-200" href="tes2.html">Tentang Kami</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-manrope antialiased tracking-tight hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-200" href="tes3.html">Layanan</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-manrope antialiased tracking-tight hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors duration-200" href="tes4.html">Kontak</a>
+</div>
+<button class="bg-secondary text-on-secondary px-4 py-3 rounded-DEFAULT font-label-bold active:scale-95 transform transition-transform">
+                Mulai Sekarang
+            </button>
+</div>
+</nav>
+<main>
+<section class="relative pt-[160px] pb-section-padding px-8 overflow-hidden">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="font-label-bold text-secondary uppercase tracking-widest mb-4 block">Inovasi dalam Skala Besar</span>
+<h1 class="font-display-xl text-display-xl text-primary mb-6">Pelopor Keanggunan Teknologi untuk Pemimpin Global.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                        Kami menggabungkan ketelitian tingkat finansial dengan teknologi mutakhir untuk membangun solusi digital yang mendefinisikan generasi berikutnya dari kepercayaan institusi.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-DEFAULT font-label-bold shadow-lg hover:shadow-xl transition-all active:scale-95">Mulai Sekarang</button>
+<button class="border-2 border-on-primary-fixed text-on-primary-fixed px-8 py-4 rounded-DEFAULT font-label-bold hover:bg-on-primary-fixed hover:text-white transition-all active:scale-95">Pelajari Lebih Lanjut</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<img alt="Lobi kantor perusahaan modern" class="rounded-xl shadow-2xl relative z-10 w-full aspect-[4/3] object-cover" data-alt="Interior lobi kantor perusahaan modern minimalis dengan garis bersih, langit-langit tinggi, pencahayaan arsitektural, dan warna netral" src="https://i.ibb.co.com/k2WxfcGB/IMG-4076.jpg"/>
+</div>
+</div>
+</section>
+<section class="py-section-padding bg-surface-container-low px-8">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Keahlian Utama Kami</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Solusi strategis yang dirancang untuk kompleksitas, stabilitas, dan kinerja masa depan.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-lowest border border-outline-variant p-10 rounded-xl hover:shadow-[0px_20px_40px_rgba(15,23,42,0.05)] transition-all group">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary-container text-on-secondary-container rounded-lg mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Penasihat Strategis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Menavigasi dinamika pasar yang kompleks dengan wawasan berbasis data dan pengalaman institusi.</p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant p-10 rounded-xl hover:shadow-[0px_20px_40px_rgba(15,23,42,0.05)] transition-all group">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary-container text-on-secondary-container rounded-lg mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Rekayasa Teknologi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Arsitektur perangkat lunak khusus yang dibangun untuk skalabilitas tinggi, keamanan, dan keandalan mutlak.</p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant p-10 rounded-xl hover:shadow-[0px_20px_40px_rgba(15,23,42,0.05)] transition-all group">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary-container text-on-secondary-container rounded-lg mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="monitoring">monitoring</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary">Analisis Pasar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Memanfaatkan algoritma khusus untuk memprediksi tren dan mengoptimalkan kinerja aset global.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-section-padding px-8">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-8">
+<div class="p-8 border-l-4 border-secondary bg-surface-container-low">
+<div class="text-[48px] font-extrabold text-primary mb-2">12+</div>
+<div class="font-label-bold text-on-surface-variant uppercase">Tahun Pengalaman</div>
+</div>
+<div class="p-8 border-l-4 border-secondary bg-surface-container-low">
+<div class="text-[48px] font-extrabold text-primary mb-2">500+</div>
+<div class="font-label-bold text-on-surface-variant uppercase">Klien Global</div>
+</div>
+<div class="p-8 border-l-4 border-secondary bg-surface-container-low">
+<div class="text-[48px] font-extrabold text-primary mb-2">$2B+</div>
+<div class="font-label-bold text-on-surface-variant uppercase">Aset Dikelola</div>
+</div>
+<div class="p-8 border-l-4 border-secondary bg-surface-container-low">
+<div class="text-[48px] font-extrabold text-primary mb-2">24/7</div>
+<div class="font-label-bold text-on-surface-variant uppercase">Dukungan Langsung</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Dibangun di atas Fondasi Kepercayaan dan Keunggulan</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Institusi kami didirikan dengan prinsip bahwa inovasi teknologi tidak boleh mengorbankan stabilitas. Saat ini, kami mengelola infrastruktur penting untuk beberapa perusahaan paling menuntut di dunia.
+                    </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 font-body-md">
+<span class="material-symbols-outlined text-secondary" data-weight="fill">check_circle</span>
+                            Protokol Keamanan Bersertifikat ISO 27001
+                        </li>
+<li class="flex items-center gap-3 font-body-md">
+<span class="material-symbols-outlined text-secondary" data-weight="fill">check_circle</span>
+                            Manajer Kesuksesan Klien Khusus
+                        </li>
+<li class="flex items-center gap-3 font-body-md">
+<span class="material-symbols-outlined text-secondary" data-weight="fill">check_circle</span>
+                            Infrastruktur Multi-Cloud Eksklusif
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<section class="py-section-padding bg-primary-container text-white px-8">
+<div class="max-w-[1280px] mx-auto text-center">
+<span class="material-symbols-outlined text-secondary-fixed text-[64px] mb-8" data-icon="format_quote">format_quote</span>
+<p class="font-headline-md text-headline-md max-w-4xl mx-auto mb-10 leading-relaxed italic">
+                    "Bermitra dengan FadhelCORP adalah keputusan terbaik untuk transformasi digital kami. Kemampuan mereka menjembatani sistem lama dan teknologi masa depan tidak tertandingi di industri."
+                </p>
+<div class="flex items-center justify-center gap-4">
+<img alt="Potret CEO" class="w-16 h-16 rounded-full object-cover border-2 border-secondary" data-alt="Potret profesional seorang eksekutif pria paruh baya dengan ekspresi percaya diri, mengenakan setelan navy di studio terang" src="https://i.ibb.co.com/k2WxfcGB/IMG-4076.jpg"/>
+<div class="text-left">
+<div class="font-label-bold">M.Fadhel Ersika</div>
+<div class="text-on-primary-container text-sm">CEO, Global FadhelCORP</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-section-padding px-8">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Wawasan Terbaru</h2>
+<p class="font-body-md text-on-surface-variant">Tetap terbarui dengan riset dan pengumuman terbaru kami.</p>
+</div>
+<a class="font-label-bold text-secondary flex items-center gap-2 hover:underline" href="#">
+                        Lihat Semua Berita <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-6 aspect-[16/10]">
+<img alt="Visualisasi jaringan digital" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Koneksi jaringan digital abstrak dengan garis biru bercahaya dan titik data di latar gelap" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzuc5m7zc8FFJTwa4ay0hYayiTMMeSQLvr37LeT9VY4bGyjOLGqrvRDZZfyyl_nk9ntuUaHY_8rrMAooi7KuOgcUpgPL48tKGr9taaq1PKD1tf7bXMB5skb4Fuy0I3krbPdMPEcySzhqaNb8s-0tsE2fPP-Ql1CDTwEsVItuHqYpE4ni8x0FdMYeIWYtg4ITTyTh-La0AIlw3qiwgh5o8o47Q6sEyOP5l4KWn8Ky2d2-hlrdQkDd1jJ8lEjwHyizaDRnf6tShWe94"/>
+</div>
+<span class="font-label-bold text-secondary text-xs uppercase mb-2 block">Teknologi</span>
+<h3 class="font-headline-md text-[24px] mb-3 group-hover:text-secondary transition-colors">Masa Depan Keamanan Multi-Cloud di Perusahaan</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-4">Bagaimana institusi modern menyeimbangkan skalabilitas dengan kedaulatan data.</p>
+<div class="font-label-bold text-xs text-on-primary-container">14 Maret 2024</div>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-6 aspect-[16/10]">
+<img alt="Grafik keuangan di layar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Layar resolusi tinggi modern menampilkan grafik keuangan kompleks dan data pasar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCthKgdiUgX-1NsOEWTvh-DoPnEdcGDqGHrttK1ukpI-MUAZ9YvrWrasFrHp7cGluqKhnJgu0B832YALAOac88RZdBQUdh_BEO1zj3WRRlbKXNmqqviAqej4chLdrhjkihCH_gnXgIirH51Qdj-tq5BgPBhFarO-pu1eKtqhXz864GzPiULAyRwJVHC1lBPWe5CFMVh7ztgn7nOSEuKQcQ-Kz14ljO3Yh0N2fmsP2kaO3m-f6obOhp8elgN0oQtoV5tTxuy8_pqug"/>
+</div>
+<span class="font-label-bold text-secondary text-xs uppercase mb-2 block">Konsultasi</span>
+<h3 class="font-headline-md text-[24px] mb-3 group-hover:text-secondary transition-colors">Perubahan Strategis dalam Alokasi Aset Global</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-4">Menavigasi lingkungan suku bunga baru dengan presisi dan visi ke depan.</p>
+<div class="font-label-bold text-xs text-on-primary-container">08 Maret 2024</div>
+</div>
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-xl mb-6 aspect-[16/10]">
+<img alt="Tim bisnis dalam rapat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tim bisnis profesional berdiskusi dalam ruang rapat modern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr7DPLYtOWy2e-z9gJGcG7PD7pIVJB0lEZ8FHaxjR8ubq3-VbBu3KkoJJ-IkHtjN_vYxjsj61cDftHCmwAa4tkeFGJztvI_2aNw1VGb7CgUzQo9Bs2UHEakXzePHQAKS_Gkxm61M-DijUqCjj55ejBMZxpK4V8l2LSUYas4rgt9Xz4imKiDjSoPR8XohSgPcy-hgzb9V_tzQ3JBwPvAoIpoFhfvwHhjn40IRb7Zlk3iy6Vu9AvtJ5RNJUJ2M1yePKyqOTTjtvp8-w"/>
+</div>
+<span class="font-label-bold text-secondary text-xs uppercase mb-2 block">Perusahaan</span>
+<h3 class="font-headline-md text-[24px] mb-3 group-hover:text-secondary transition-colors">TechElegance Ekspansi ke Pasar Asia</h3>
+<p class="font-body-md text-on-surface-variant text-sm mb-4">Membuka kantor regional baru di Singapura untuk melayani mitra APAC.</p>
+<div class="font-label-bold text-xs text-on-primary-container">28 Februari 2024</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full mt-auto bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-[1280px] mx-auto py-16 px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-bold text-slate-900 dark:text-white font-manrope mb-6">FadhelCORP</div>
+<p class="text-slate-500 dark:text-slate-400 font-manrope text-sm mb-6">
+                    Mendefinisikan ulang teknologi perusahaan dengan presisi, stabilitas, dan inovasi tingkat institusi.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest text-slate-600 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest text-slate-600 hover:text-emerald-600 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="work">work</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-bold text-slate-900 dark:text-white mb-6 uppercase tracking-wider text-xs">Sumber</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 font-manrope text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Studi Kasus</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-manrope text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Proses Kami</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-manrope text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">White Paper</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-manrope text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Kit Pers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-slate-900 dark:text-white mb-6 uppercase tracking-wider text-xs">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-emerald-600 dark:text-emerald-400 underline font-manrope text-sm" href="#">Kebijakan Privasi</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-manrope text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Ketentuan Layanan</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-manrope text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Pengaturan Cookie</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 font-manrope text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Kantor Global</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-bold text-slate-900 dark:text-white mb-6 uppercase tracking-wider text-xs">Tetap Terhubung</h4>
+<p class="text-slate-500 dark:text-slate-400 font-manrope text-sm mb-4">Berlangganan pembaruan bulanan kami.</p>
+<div class="flex">
+<input class="w-full bg-white border border-slate-200 p-2 rounded-l-lg text-sm focus:ring-2 focus:ring-emerald-500 outline-none" placeholder="Alamat Email" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-r-lg font-label-bold active:scale-95 transition-transform">Gabung</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto py-8 px-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<span class="text-slate-500 dark:text-slate-400 font-manrope text-sm">© 2024 FadhelCORP Global. Hak cipta dilindungi.</span>
+</div>
+</footer>
+</body></html>
